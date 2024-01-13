@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Light.ttf");
+}
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/Mont-Black.otf");
+}
+@font-face {
+  font-family: "Allura";
+  src: url("/fonts/Allura-Regular.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-primary font-bold text-shadow-100;
+  }
+  h2 {
+    @apply font-outfit text-secondary font-semibold;
+  }
+  h3 {
+    @apply text-subtitle font-semibold text-shadow-100;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    color: transparent;
+    background-clip: text;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    filter: contrast(1) drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.2));
+  }
+
+  .g1 {
+    background-image: url("/public/images/img1.png");
+  }
+  .g2 {
+    background-image: url("/public/images/img2.png");
+  }
+  .g3 {
+    background-image: url("/public/images/img3.png");
+  }
+  .g4 {
+    background-image: url("/public/images/img4.png");
+  }
+  .g5 {
+    background-image: url("/public/images/img5.png");
+  }
+
+  .text-shadow-100 {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .text-shadow-200 {
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .flex-row {
+    @apply flex items-center align-middle justify-center flex-nowrap;
+  }
+  .flex-column {
+    @apply flex flex-col items-start justify-center;
+  }
+
+  .bg-gradient-100 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, #fffcd1 0%);
+  }
+
+  .p-section {
+    padding: max(3%, 1rem) 0 0;
+  }
+  .dp-shad {
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));
+  }
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url("/public/images/roadmapbg.png");
+  }
+}
+
+@layer components {
+  .grid-columns-two {
+    grid-template-columns: auto auto;
+  }
+  .grid-cols-roadmap {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
