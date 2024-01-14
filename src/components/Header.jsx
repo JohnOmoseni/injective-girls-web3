@@ -1,17 +1,19 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-
 import { navLinks } from "@constants/navLinks";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import Button from "./Button";
 import LinkRow from "./LinkRow";
 import logo from "@assets/images/logo.png";
+import { Link } from "react-scroll";
 
 const Header = ({ setOpenMenu }) => {
   return (
     <header className="max-sm:fixed max-sm:backdrop-blur-sm flex-row gap-10 !justify-between top-2 left-3 right-3 z-50 bg-opacity-90 mx-auto py-6 px-5 max-sm:p-3 max-sm:rounded-md max-sm:shadow-sm ">
       <Link
-        to="/"
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={400}
         className=" !flex flex-row items-center !justify-between hover:drop-shadow-md transition-sm hover:scale-[0.98]"
       >
         <img

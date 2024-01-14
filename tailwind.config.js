@@ -25,7 +25,7 @@ export default {
         base: ["0.9rem", { lineHeight: "1.6" }],
         subtitle: ["clamp(1.2rem, 1vw, 20px)", { lineHeight: "1.2" }],
         secondary: ["clamp(1.5rem, 3vw, 40px) ", { lineHeight: "1.2" }],
-        footer: "clamp(70px, 10vw, 150px)",
+        footer: "clamp(80px, 10vw, 150px)",
         primary: ["clamp(115px, 15vw, 200px)", { lineHeight: "1.3" }],
       },
     },

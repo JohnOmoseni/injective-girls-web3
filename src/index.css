@@ -78,13 +78,13 @@
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));
   }
   .dp-shad-yellow {
-    filter: drop-shadow(0 1px 2px rgba(243, 227, 53, 0.409));
+    filter: drop-shadow(0 1px 2px rgba(243, 227, 53, 0.2));
   }
   .bg-img {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url("/public/images/roadmapbg.png");
   }
