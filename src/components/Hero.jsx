@@ -13,15 +13,15 @@ function Hero() {
       className="relative w-full max-sm:pt-[30vh] max-sm:min-h-[100vh] min-h-[85vh] pt-[6%] pb-[6%]"
     >
       <div className="w-full h-full flex-column !items-center select-none">
-        <h1 className="capitalize font-allura text-8xl md:text-[10vw] text-center text-shadow-200 dp-shad">
+        <h1 className="capitalize font-allura text-8xl md:text-[10vw] text-center text-shadow-200 dp-shad max-sm:px-3">
           Injective
         </h1>
-        <h1 className="uppercase px-2 relative whitespace-nowrap md:text-[20vw] font-mont text-center -mt-7 md:-mt-14">
-          <span className=" text-gradient ml-2 g1">G</span>
-          <span className=" text-gradient ml-2 g2">I</span>
-          <span className=" text-gradient ml-2 g3">R</span>
-          <span className=" text-gradient ml-2 g4">L</span>
-          <span className=" text-gradient ml-2 g5">S</span>
+        <h1 className="uppercase max-sm:px-2 px-2 relative whitespace-nowrap md:text-[20vw] font-mont text-center -mt-7 md:-mt-14">
+          <span className=" text-gradient sm:ml-2 g1">G</span>
+          <span className=" text-gradient sm:ml-2 g2">I</span>
+          <span className=" text-gradient sm:ml-2 g3">R</span>
+          <span className=" text-gradient sm:ml-2 g4">L</span>
+          <span className=" text-gradient sm:ml-2 g5">S</span>
         </h1>
 
         <a
@@ -33,7 +33,7 @@ function Hero() {
         >
           <Button
             title="Mint on Talis"
-            className="bg-yellow-300 !px-6 font-semibold text-shadow-100 shadow-sm"
+            className="bg-yellow-300 !px-6 font-semibold text-shadow-100 shadow-sm hover:!dp-shad-yellow"
           />
         </a>
       </div>

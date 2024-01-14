@@ -28,7 +28,7 @@ export const roadmap = [
     ],
   },
   {
-    phase: "Phase 1",
+    phase: "Phase 2",
     quarter: "Q1 2024",
     list: [
       "  ° NFT listing ",
@@ -39,7 +39,7 @@ export const roadmap = [
     ],
   },
   {
-    phase: "Phase 1",
+    phase: "Phase 3",
     quarter: "Q1 2024",
     list: [" ° Trading bot release", "° Token launch", "° More utilities "],
   },

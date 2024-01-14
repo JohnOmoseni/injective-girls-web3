@@ -1,14 +1,12 @@
-@font-face {
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Outfit:wght@300;400;500;600;800&display=swap");
+
+/* @font-face {
   font-family: "Outfit";
   src: url("/fonts/Outfit-Light.ttf");
-}
+} */
 @font-face {
   font-family: "Mont";
   src: url("/fonts/Mont-Black.otf");
-}
-@font-face {
-  font-family: "Allura";
-  src: url("/fonts/Allura-Regular.ttf");
 }
 
 @tailwind base;
@@ -40,19 +38,19 @@
   }
 
   .g1 {
-    background-image: url("/public/images/img1.png");
+    background-image: url("/src/icons/img1.svg");
   }
   .g2 {
-    background-image: url("/public/images/img2.png");
+    background-image: url("/src/icons/img2.svg");
   }
   .g3 {
-    background-image: url("/public/images/img3.png");
+    background-image: url("/src/icons/img3.svg");
   }
   .g4 {
-    background-image: url("/public/images/img4.png");
+    background-image: url("/src/icons/img4.svg");
   }
   .g5 {
-    background-image: url("/public/images/img5.png");
+    background-image: url("/src/icons/img5.svg");
   }
 
   .text-shadow-100 {
@@ -78,6 +76,9 @@
   }
   .dp-shad {
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));
+  }
+  .dp-shad-yellow {
+    filter: drop-shadow(0 1px 2px rgba(243, 227, 53, 0.409));
   }
   .bg-img {
     width: 100%;

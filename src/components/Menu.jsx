@@ -1,4 +1,4 @@
-import { CgClose } from "react-icons/cg";
+import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
 
 import { navLinks } from "@constants/navLinks";
@@ -34,7 +34,7 @@ const animateMenu = {
 function Menu({ setOpenMenu }) {
   return (
     <motion.div
-      className="block lg:hidden bg-body z-50 w-full fixed inset-0 h-screen bg-opacity-30 backdrop-blur-sm"
+      className="block lg:hidden bg-body z-50 w-full fixed inset-0 h-100dvh bg-opacity-30 backdrop-blur-sm"
       variants={animateMenu}
       initial="hidden"
       animate="visible"
@@ -42,17 +42,17 @@ function Menu({ setOpenMenu }) {
       onClick={() => setOpenMenu(false)}
     >
       <div
-        className="w-[80%] isolate h-full absolute top-0 right-0 bg-body border-l border-solid border-br-light flex-column gap-4 !items-center pb-6 text-white"
+        className="w-[80%] isolate h-full absolute top-0 right-0 bg-[#111] flex-column gap-4 !items-center pb-6 text-white overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         <span
-          className="absolute top-4 right-4 p-1 transition-sm active:scale-95 shadow-sm"
+          className="absolute top-4 right-5 p-1 transition-colors active:scale-95 hover:text-white"
           onClick={() => setOpenMenu(false)}
           title="close-menu"
         >
-          <CgClose size="25" />
+          <IoClose size="30" className="close-menu" fill="white" />
         </span>
-        <nav className="flex-1 flex-column gap-6 mt-16 mb-16 md:mt-[20%] md:mb-[15%] px-[4%] overflow-y-auto">
+        <nav className="flex-1 text-xl flex-column gap-6 mt-16 mb-16 md:mt-[20%] md:mb-[15%] px-[4%] overflow-y-auto">
           {navLinks.map((link, idx) => (
             <NavLinks
               key={idx}
@@ -62,7 +62,7 @@ function Menu({ setOpenMenu }) {
             />
           ))}
         </nav>
-        <Button title="Buy on Talis" className="!w-[70%]" type="normal" />
+        {/* <Button title="Buy on Talis" className="!w-[70%]" type="normal" /> */}
       </div>
     </motion.div>
   );

@@ -15,7 +15,7 @@ function About() {
           <h2 className="capitalize font-allura sm:text-6xl select-none max-sm:text-center">
             About Injective Girls
           </h2>
-          <p className="my-4 max-sm:px-3 sm:max-w-[50ch] text-lg text-cyan-800 ">
+          <p className="my-4 max-sm:px-3 w-full sm:max-w-[50ch] text-lg text-cyan-800 ">
             Injective Girls NFT is a groundbreaking collection of non-fungible
             tokens that artfully portrays the significance of female children in
             society. Each NFT within this collection serves as a unique digital
@@ -28,7 +28,7 @@ function About() {
         </div>
       </div>
 
-      <div className="sm:order-1 max-w-[600px] md:max-w-[700px] -ml-[10%] select-none">
+      <div className="sm:order-1 max-w-[700px] -ml-[10%] select-none">
         <img src={about} alt="" />
       </div>
     </motion.div>

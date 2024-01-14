@@ -2,9 +2,9 @@ import { roadmap } from "@constants/constants";
 import { motion } from "framer-motion";
 
 export const Card = ({ phase, quarter, list }) => (
-  <div className="w-full bg-yellow-100 bg-opacity-30 rounded-md shadow-100 py-3 px-3 flex-column !justify-start gap-3 backdrop-blur-md border border-solid border-[#00fefa3d] min-h-[300px] transition-sm hover:backdrop-blur-sm">
+  <div className="w-full bg-yellow-100 bg-opacity-30 rounded-md shadow-100 py-3 px-3 flex-column !justify-start gap-3 backdrop-blur-md border border-solid border-[#00fefa3d] min-h-[300px] transition-sm hover:backdrop-blur-sm hover:dp-shad-yellow">
     <div className="bg-yellow-100 rounded-md shadow-sm p-2">
-      <h3>{phase}</h3>
+      <h3 className="font-[800]">{phase}</h3>
       <h3 className="mt-1">{quarter}</h3>
     </div>
     <ul className="relative flex-column gap-3 pt-[10%] pb-[8%] px-2">
